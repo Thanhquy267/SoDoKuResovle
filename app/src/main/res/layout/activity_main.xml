@@ -8,26 +8,35 @@
         android:focusableInTouchMode="true"
         tools:context=".MainActivity">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/test_iamge_2" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/v_top"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
 
         <View
             android:id="@+id/v_top"
             android:layout_width="wrap_content"
             android:layout_height="0.5dp"
             android:layout_alignParentTop="true"
-            android:background="@color/black" />
+            android:background="@color/black"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
 
     </RelativeLayout>
 </layout>
